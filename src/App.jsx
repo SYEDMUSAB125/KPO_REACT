@@ -1,6 +1,11 @@
 import { useState,useEffect, useMemo } from 'react'
-import Counter from './Counter'
 
+import "./App.css"
+import Counter from './components/counter/Counter';
+// three ways 
+// module
+// inline 
+// file
 
 function App() {
  const [data , setData ] = useState(null);
@@ -28,6 +33,31 @@ const HandleSubmit = ()=>{
     <input type="text" onChange={getData}  />
     <button onClick={handleClick} >  submit </button> */}
  {/* <form onSubmit={(e)=> HandleForm(e) } > */}
+
+
+
+
+
+
+
+
+{/* inline */}
+ {/* <h1 style={{color:"red", backgroundColor:"skyblue"
+
+ }}>learning Form </h1> */}
+ {/* file */}
+ <h1 className="heading"  >learning Form </h1>
+
+
+{/* module */}
+<Counter/>
+
+
+
+
+
+
+
 
  <form onSubmit={HandleForm} >
   Name:
